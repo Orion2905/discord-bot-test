@@ -16,6 +16,10 @@ class General(commands.Cog):
     @commands.command(name="test", help="Il bot ripete ciò che dici.")
     async def say(self, ctx, *, message: str):
         await ctx.send(message)
+
+    @commands.command(name="cicicic", help="Il bot ripete ciò che dici.")
+    async def say(self, ctx, *, message: str):
+        await ctx.send(message)
     
 
 async def setup(bot):
