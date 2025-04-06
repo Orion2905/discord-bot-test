@@ -13,5 +13,10 @@ class General(commands.Cog):
     async def test(self, ctx: commands.Context, *, message: str):
         await ctx.send(f"🔊 {message}")
 
+    @commands.command(name="test", help="Il bot ripete ciò che dici.")
+    async def say(self, ctx, *, message: str):
+        await ctx.send(message)
+    
+
 async def setup(bot):
     await bot.add_cog(General(bot))
